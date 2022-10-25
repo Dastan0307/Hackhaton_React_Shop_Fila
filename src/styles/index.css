@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.user {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(95, 93, 105);
+}
+
+.userIn {
+    width: 20%;
+    height: 60%;
+    padding-left: 45px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px #09127e, -0px -10px red;
+}
+
+/* //ProductDetails */
+.productDetails {
+    margin-top: 30px;
+}
+
+.productDetailsCard {
+    display: flex;
+}
+.productDetailsImg {
+    margin-left: 0;
+    margin-right: 50px;
+}
+.productDetailsPost {
+    margin-top: auto;
+}
+
+/* AddProduct */
+.addProductCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.addProducBox {
+    box-shadow: #09127e;
+}
+
+.addProductBtn {
+    margin-top: 10px !important;
+}
+
+.productDetailsPage {
+    margin: 100px 0;
+}
+
+/* Edit Product  */
+.EditProductCard {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.editProductPage {
+    margin: 30px 0;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+/* product Card  */
+.productCardDetails:hover {
+    color: aqua;
+}
+.productCardUpdate:hover {
+    color: rgb(81, 241, 81);
+}
+.productCardDelete:hover {
+    color: red;
+}
+.productCardCart:hover {
+    color: rgb(189, 207, 52);
+}
+
+.filsLink {
+    color: rgb(39, 66, 204);
+}
+
+/* Procuct List  */
+.cardListCard {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.productListMainCard {
+    margin: 30px 0px 10px 10px !important;
+    padding: 0;
+}
+
+.productListSearch {
+    width: 98% !important;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.shadow {
+    background-color: #80d8ff;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(236, 229, 229);
+}
+
+ /* Cart Page  */
+ .cartPage {
+    margin-bottom: 13%;
+ }
+
+ /* Admin Page  */
+ .adminPageError {
+    margin: 110px 0;
+ }

@@ -1,0 +1,134 @@
+{
+  "pruducts": [
+    {
+      "name": "Sneaker Bummer",
+      "brend": "FILA",
+      "model": "кроссовки FILA Disruptor 2 Wmns Black Matt / White",
+      "price": 3700,
+      "size": 41,
+      "type": "sneaker",
+      "picture": "https://images.prom.ua/1259178953_w640_h640_zhenskie-belye-krossovki.jpg",
+      "id": 1
+    },
+    {
+      "name": "Sneaker for run",
+      "brend": "FILA",
+      "model": "кроссовки FILA Disruptor 2 Wmns Black Matt / White",
+      "price": 400,
+      "size": 42,
+      "type": "sneaker",
+      "picture": "https://images.prom.ua/1218481726_w640_h640_zhenskie-belye-krossovki.jpg",
+      "id": 2
+    },
+    {
+      "name": "Sneaker for Basketball",
+      "brend": "FILA",
+      "model": "кроссовки FILA Disruptor 2 Wmns Black Matt / White",
+      "price": 2800,
+      "size": 40,
+      "type": "sneaker",
+      "picture": "https://sneakers.by/image/catalog/blog/polezno/fila-istoria/fila-fendi-sneakers.jpg",
+      "id": 3
+    },
+    {
+      "name": "Sneaker for Volleyball",
+      "brend": "FILA",
+      "model": "кроссовки FILA Disruptor 2 Wmns Black Matt / Pink",
+      "price": 5500,
+      "size": 41,
+      "type": "sneaker",
+      "picture": "https://images.prom.ua/1227575957_w640_h640_zhenskie-rozovye-krossovki.jpg",
+      "id": 4
+    },
+    {
+      "name": "Sneaker for Basketball",
+      "brend": "FILA",
+      "model": "кроссовки FILA Disruptor 2 Wmns Black Matt / Brown",
+      "price": 4800,
+      "size": 41,
+      "type": "sneaker",
+      "picture": "https://static.rendez-vous.ru/files/catalog_models/2261179_krossovki_fila_disruptor_peachwhip_svetlo_rozovyy_kozha_natural_naya.JPG",
+      "id": 5
+    },
+    {
+      "name": "Sneaker for Football",
+      "brend": "FILA",
+      "model": "кроссовки FILA Disruptor 2 Wmns Black Matt / Brown",
+      "price": 4800,
+      "size": 39,
+      "type": "sneaker",
+      "picture": "https://www.traektoria.ru/upload/trk_iblock_img/072/0727268ee0f2adca85438692783e3b59.JPG",
+      "id": 6
+    },
+    {
+      "name": "Sneaker for Tennis",
+      "brend": "FILA",
+      "price": 6200,
+      "size": 38,
+      "type": "sneaker",
+      "picture": "https://i.siteapi.org/E1qnBice3Uq0sVRCpBWUBe7t928=/0x144:630x629/fit-in/312x240/filters:fill(transparent):format(png)/35fc4a469a2f47d.s2.siteapi.org/img/4c840ygb5xa8o8c0gwcgko0cg4wscs",
+      "model": "DISRUPTOR 2 / Red",
+      "id": 7
+    },
+    {
+      "name": "Sneaker for Basketball",
+      "brend": "FILA",
+      "price": 4500,
+      "size": 41,
+      "type": "sneaker",
+      "picture": "https://static.rendez-vous.ru/files/catalog_models/2102884_krossovki_fila_disruptor_ii_chernyy_kozha_natural_naya.JPG",
+      "model": "Артикул DISRUPTOR 2 / Black",
+      "id": 8
+    },
+    {
+      "name": "Sneaker for run",
+      "brend": "FILA",
+      "price": 6800,
+      "size": 40,
+      "type": "sneaker",
+      "picture": "https://avatars.mds.yandex.net/get-mpic/5245589/img_id4660329753829410313.jpeg/9hq",
+      "model": "DISRUPTOR / Back",
+      "id": 10
+    },
+    {
+      "name": "Sneaker for run",
+      "brend": "FILA",
+      "price": 4000,
+      "type": "sneaker",
+      "picture": "https://assets.ajio.com/medias/sys_master/root/20220708/23gL/62c84d8cf997dd03e2c58705/-473Wx593H-469155845-white-MODEL.jpg",
+      "model": "Renno N Generation Patched Lace-Up Running Shoes",
+      "size": "41",
+      "id": 11
+    },
+    {
+      "name": "T-Shirt",
+      "brend": "FILA",
+      "price": 2000,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQv1jiCklV3IakM8aYYZrOBrVbcamdpNdqWlA&usqp=CAU",
+      "model": "Shirt logo Discount",
+      "type": "shirt",
+      "size": "40",
+      "id": 12
+    },
+    {
+      "name": "Pant",
+      "brend": "FILA",
+      "price": 3000,
+      "picture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLsOFVFBFk9yHSQkVSd_4Py2oC4svl56jlRQ&usqp=CAU",
+      "model": "Countio",
+      "type": "pant",
+      "size": "33",
+      "id": 13
+    },
+    {
+      "name": "Fila Track Pants Automatic",
+      "brend": "FILA",
+      "price": 3000,
+      "picture": "https://www.tradeinn.com/f/13749/137492546/fila-track-pants.jpg",
+      "model": "Product description Fila Track Pants Automatic translation Original",
+      "type": "pant",
+      "size": "35",
+      "id": 14
+    }
+  ]
+}
