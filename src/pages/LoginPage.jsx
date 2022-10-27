@@ -17,13 +17,16 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 const LoginPage = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [picture, setPicture] = useState('');
 
   // выташим login сразу используя деструктризацию
   const { login } = useAuth();
   // Создаем функцию что бы получить один объект
   function handleLogin() {
-      login(username, password);
+      login(username, password, picture);
   };
+
+
 
   // mui
   const [values, setValues] = React.useState({
@@ -47,7 +50,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className='user'>
+    <div className='user login'>
     <Box className='userIn'
         component="form"
         sx={{
@@ -61,6 +64,7 @@ const LoginPage = () => {
       >
         <Typography gutterBottom variant="h5" component="div" className='loginName'>Login Form</Typography>
           <TextField id="username" label="Username" variant="outlined" onChange={e => setUsername(e.target.value)} />
+          <TextField id="username" label="Profile Picture" variant="outlined" onChange={e => setPicture(e.target.value)} />
           <FormControl sx={{ m: 1, width: '25ch' }} variant="outlined" onChange={e => setPassword(e.target.value)}>
           <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
           <OutlinedInput

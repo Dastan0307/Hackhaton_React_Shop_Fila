@@ -32,6 +32,7 @@ const ProductContextProvider = ({ children }) => {
     // get all products
     const getProducts = async () => {
         const { data } = await axios(`${JSON_API_PRODUCTS}/${window.location.search}`);
+        console.log(data);
         dispatch({
             type: ACTIONS.GET_PRODUCTS,
             payload: data
@@ -76,6 +77,7 @@ const ProductContextProvider = ({ children }) => {
         const url = `${location.pathname}?${search.toString()}`;
         navigate(url);
     };
+
 
 
     const values = {

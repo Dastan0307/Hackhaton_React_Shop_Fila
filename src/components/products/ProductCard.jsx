@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useProducts } from '../../contexts/ProductContextProvider';
 import { useCart } from '../../contexts/CartConctextProvider';
 import { styled } from '@mui/material/styles';
+import { NavLink } from 'react-router-dom';
 // imports mui 
 import Box from '@mui/material/Box';
 import Input from '@mui/material/Input';
@@ -116,21 +117,21 @@ export default function RecipeReviewCard({ item }) {
         <IconButton aria-label="add to favorites" onClick={() => setLIke(!like)}>
           <p>{like ? <FavoriteIcon sx={{ color: 'red' }} /> : <FavoriteIcon  />}</p><p>{like ? count + 1 : count}</p>
         </IconButton>
-        <ExpandMore
-          expand={expanded}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
+          <ExpandMore
+            expand={expanded}
+            onClick={handleExpandClick}
+            aria-expanded={expanded}
+            aria-label="show more"
+            >
           <ExpandMoreIcon />
         </ExpandMore>
       </CardActions>
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
           <Typography paragraph>
-            <h6>Model: {item.model}</h6>
-            <strong>Mobile number: (+996) 777 77 77 77</strong>
-            <strong>Our Website:  <a href="https://www.fila.com/" className='filsLink'>www.fila.com/</a></strong>
+            <>Model: <strong>{item.model}</strong></><br />
+            <>Mobile number: <strong>(+996) 777 77 77 77</strong></><br />
+            <>Our Website: <strong><a href="https://www.fila.com/" className='filsLink'>www.fila.com/</a></strong></>
           </Typography>
           <Typography paragraph>Coments...</Typography>
           <Typography paragraph></Typography>

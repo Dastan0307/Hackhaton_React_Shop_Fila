@@ -12,6 +12,7 @@ body {
     background-color: rgb(95, 93, 105);
 }
 
+
 .userIn {
     width: 20%;
     height: 60%;
@@ -133,3 +134,4 @@ a {
  .adminPageError {
     margin: 110px 0;
  }
+

@@ -15,6 +15,7 @@ import AdbIcon from '@mui/icons-material/Adb';
 import { ImageListItem } from '@mui/material';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
+
 // Свои importы
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContextProvider';
@@ -59,10 +60,13 @@ const lightTheme = createTheme({
     },
 });
 
+
 const ResponsiveAppBar = () => {
+
+
     // custom
     const navigate = useNavigate();
-    const { user, checkAuth, logout } = useAuth();
+    const { user, picture, checkAuth, logout } = useAuth();
 
     React.useEffect(() => {
         if(localStorage.getItem("token")){
@@ -88,6 +92,10 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
 
+    // check User 
+    const name = JSON.parse(localStorage.getItem('username'));
+
+
   return (
     //Чтобы наш стиль добавился всё наш код оборачиваем на ThemeProvider
     <ThemeProvider theme={lightTheme}>
@@ -96,7 +104,7 @@ const ResponsiveAppBar = () => {
             <Toolbar disableGutters>
                 {/* Свой логатип */}
                 <ImageListItem sx={{ width: 100, height: 400 }} cols={3} rowHeight={164}>
-                    <img src="https://cdn.shopify.com/s/files/1/0271/3973/5629/files/logo_619x.png?v=1614347840" alt="" />
+                    <img src="https://cdn.shopify.com/s/files/1/0271/3973/5629/files/logo_619x.png?v=1614347840" />
                 </ImageListItem>
             <Typography
                 variant="h6"
@@ -182,10 +190,11 @@ const ResponsiveAppBar = () => {
                 ))}
             </Box>
 
-            <Box sx={{ flexGrow: 0 }}>
+            <Typography sx={{ color: '#0b1f3f', fontWeight: 600}}>{name ? (<>{name}</>) : ''}</Typography>
+            <Box sx={{ flexGrow: 0, marginLeft: 2 }}>
                 <Tooltip title="Open settings">
                 <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                    <Avatar alt={user} src="..." />
+                    <Avatar src={picture} alt={user[1]} />
                 </IconButton>
                 </Tooltip>
                 <Menu
@@ -221,3 +230,5 @@ const ResponsiveAppBar = () => {
   );
 };
 export default ResponsiveAppBar;
+
+

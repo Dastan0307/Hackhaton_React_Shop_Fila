@@ -9,6 +9,7 @@ const API = 'http://35.239.251.89/';
 
 const AuthContextProvider = ({ children }) => {
     const [user, setUser] = useState('');
+    const [picture, setPicture] = useState('');
     const [error, setError] = useState('');
 
     const navigate = useNavigate();
@@ -31,7 +32,7 @@ const AuthContextProvider = ({ children }) => {
         };
     };
 
-    const login = async (username, password) => {
+    const login = async (username, password, picture) => {
         let formData = new FormData();
         formData.append("username", username);
         formData.append("password", password);
@@ -41,7 +42,9 @@ const AuthContextProvider = ({ children }) => {
             navigate('/');
             localStorage.setItem("token", JSON.stringify(res.data));
             localStorage.setItem("username", JSON.stringify(username));
+            localStorage.setItem("picture", JSON.stringify(picture));
             setUser(username);
+            setPicture(picture);
         } catch (error) {
             console.log(error);
             setError('Wrong username or password', error);
@@ -63,6 +66,8 @@ const AuthContextProvider = ({ children }) => {
 
             let username = localStorage.getItem('username');
             setUser(username);
+            let picture = localStorage.getItem('picture');
+            setPicture(picture);
         } catch (error) {
             console.log(error);
             logout();
@@ -72,7 +77,9 @@ const AuthContextProvider = ({ children }) => {
     function logout(){
         localStorage.removeItem("token");
         localStorage.removeItem("username");
+        localStorage.removeItem("picture");
         setUser('');
+        setPicture('');
         navigate('/');
     };
     
@@ -80,6 +87,7 @@ const AuthContextProvider = ({ children }) => {
     <authContext.Provider value={{
         user,
         error,
+        picture,
         register,
         login, 
         checkAuth,
