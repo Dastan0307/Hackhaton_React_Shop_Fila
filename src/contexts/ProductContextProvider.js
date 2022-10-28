@@ -1,7 +1,7 @@
 import React, {createContext, useContext, useReducer, useState} from 'react';
 import axios from 'axios';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { ACTIONS, JSON_API_PRODUCTS } from '../helpers/consts';
+import { ACTIONS, JSON_API_PRODUCTS, JSON_API_PAYMENT } from '../helpers/consts';
 
 export const productContext = createContext();
 export const useProducts = () => useContext(productContext);
@@ -78,6 +78,9 @@ const ProductContextProvider = ({ children }) => {
         navigate(url);
     };
 
+    const Payment = async (newPayment) => {
+        await axios.post(JSON_API_PAYMENT, newPayment);
+    }
 
 
     const values = {
@@ -87,6 +90,7 @@ const ProductContextProvider = ({ children }) => {
         getProductDetails,
         saveEditedProduct,
         fetchByParams,
+        Payment,
 
         products: state.products,
         productDetails: state.productDetails

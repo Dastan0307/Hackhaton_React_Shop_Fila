@@ -9,3 +9,8 @@ export const CART = {
 };
 
 export const JSON_API_PRODUCTS = "http://localhost:8000/pruducts";
+
+export const JSON_API_PAYMENT = "http://localhost:8000/payment";
+export const ACTIONS1 = {
+    GET_PAYMENT: "GET_PAYMENT"
+};

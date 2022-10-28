@@ -3,10 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { useProducts } from '../../contexts/ProductContextProvider';
 import { useCart } from '../../contexts/CartConctextProvider';
 import { styled } from '@mui/material/styles';
-import { NavLink } from 'react-router-dom';
 // imports mui 
 import Box from '@mui/material/Box';
-import Input from '@mui/material/Input';
 
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';

@@ -135,3 +135,18 @@ a {
     margin: 110px 0;
  }
 
+ .payment {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+ }
+
+.paymentList {
+    width: 40%;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 10px 0px #09127e, -10px -0px red;
+}
+

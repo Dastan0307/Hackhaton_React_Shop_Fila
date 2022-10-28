@@ -8,6 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Button, TextField, Typography } from '@mui/material';
 import { useCart } from '../../contexts/CartConctextProvider';
+import { useNavigate } from 'react-router-dom';
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -22,6 +23,7 @@ const rows = [
 ];
 
 export default function Cart() {
+  const navigate = useNavigate();
     const { getCart, cart, changeProductCount, deleteProductCart } = useCart();
 
     React.useEffect(() => {
@@ -82,7 +84,10 @@ export default function Cart() {
       </Table>
       <Typography variant="h6" component="div">
           Total price: {cart?.totalPrice}
-          <Button onClick={cartCleaner} variant="contained" color="warning">BUY NOW</Button>
+          <Button variant="contained" color="warning" onClick={() => {
+          navigate('/payment');
+          cartCleaner()
+          }}>Buy now</Button>
       </Typography>
     </TableContainer>
   );

@@ -9,6 +9,10 @@ import EditProductPage from './pages/EditProductPage';
 import ProductDetailsPage from './pages/ProductDetailsPage';
 import ProductsPage from './pages/ProductsPage';
 import CartPage from './pages/CartPage';
+import PaymentPage from './pages/PaymentPage'
+
+
+
 
 
 // Здесь мы сокращаем путь, все пути мы вложим в одну массив чтобы потом выташить с map
@@ -59,6 +63,11 @@ const MainRoutes = () => {
             element: <CartPage />,
             id: 9
         },
+        {
+            link:'/payment',
+            element: <PaymentPage />,
+            id: 10
+        }
     ];
 
     // Здесь мы не запишем каждому Route перебирам наш массив и потставляем нужные места
